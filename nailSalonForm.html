@@ -1,0 +1,127 @@
+<DOCTYPE html> 
+<html-land="en"> 
+<head> 
+	<title>Appointment</title> 
+	<link href = "nailSalonStyle.css" rel="stylesheet"> 
+</head> 
+	<body> 
+		<main>
+			<!--Day selector-->
+			<h1>Please select an ppointment day.</h1>
+			<select class="form-select" aria-label="Default select example">
+			  <option selected>Month</option>
+			  <option value="">June</option>
+			  <option value="2">July</option>
+			  <option value="3">August</option>
+			  <option value="3">April</option>
+			</select>
+			<!--Day selector-->
+			<select class="form-select" aria-label="Default select example">
+				<option selected>Day</option>
+				<option value="1">1st</option>
+				<option value="2">2nd</option>
+				<option value="3">3rd</option>
+				<option value="4">4th</option>
+				<option value="4">5th</option>
+			</select>
+			<!--time selector-->
+			<select class="form-select" aria-label="Default select example">
+				<option selected>Day</option>
+				<option value="1">1:00 pm </option>
+				<option value="2">2:00 pm </option>
+				<option value="3">3:00 pm</option>
+				<option value="4">4:00 pm</option>
+				<option value="4">5:00 pm</option>
+			</select>
+			<div id="services">
+				<div id="selections">
+					<button class="service-button">
+						<img src=" images/nail4.jpg" alt="Gel-X" />
+						<i class="fa-solid fa-paintbrush"></i>
+						<h2>Extention: Gel-X</h2>
+						<p>3 Hours : A More Natural Look Then Acrylic</p><br>
+						<ul>
+							<button>
+						    <li> <b>Short: $70.00 </b></li>
+							</button>
+							<button>
+						    <li><b>Medium: $75.00</b></li>
+							</button>
+							<button>
+						    <li><b>Large: $80.0</b></li>
+							</button>
+						</ul>
+						<p> <b>These prices are listed for plain sets.</b> Frenchies, designs, etc will be an additional cost.</p>
+						<a herf="#"> Learn more</a>
+					</button>
+				</div>
+				<div id ="selections">
+					<button class="service-button">
+						<img src=" images/acrylicnails.jpg" alt="Acrylic" />
+						<i class="fa-solid fa-paintbrush"></i>
+						    <h2>Extention: Acrylic</h2>
+						    <p>3 Hours</p><br>
+						    <ul>
+								<button onclick="addToTotal(70)">
+						        <li> <b>Short: $70.00 </b></li>
+								</button>
+								<button onclick="addToTotal(75)">
+						        <li><b>Medium: $75.00</b></li>
+								</button> 
+								<button onclick="addToTotal(80)"> 
+						        <li><b>Large: $80.00</b></li>
+								</button>
+						    </ul>
+						    <p> <b>These prices are listed for plain sets.</b> Frenchies, designs, etc will be an additional cost.</p>
+					</button>
+				</div>
+				<div id="selection">		
+					<button class="service-button">
+						            <img src=" images/gelmani.jpeg" alt="E-file Manicure" />
+						            <i class="fa-solid fa-paintbrush"></i>
+						            <h2>Natural Nails: E-file Manicure "Stuctured Mani"</h2>
+						            <p>2 Hours 30 Minutes $75.00</p><br>
+						            <p><ul>
+						                <li>A Russian cuticle cleaning technique with gel application.</li>
+						            <li> Creates the perfect architecture of your nail bed.</li>
+						        <li> Smoothes and strengthens your nails.</li>
+						    <li><b> Includes: Glossy Topcoat & Cuticuel Oil</b></li>
+						</ul></p>
+					</button>
+				</div>
+				<div id ="selections">
+					<button class="service-button">
+						<img src=" images/natural.jpeg" alt="Gel Manicure" />
+						<i class="fa-solid fa-paintbrush"></i>
+						<h2>Natural Nails: Regular Gel Manicure "</h2>
+						<p>1 Hour: $40.00</p><br>
+						<ul> 
+						    <li><p><b>This is a regular manicure, NOT a russian manicure. You get to chose the color of gel polish.</b></p></li>
+						</ul>
+					</button>
+				</div>
+				<div id="selection">
+					<button>		
+					<i class="fa-solid fa-dollar-sign"></i>
+					<h2>SALE: $100 ANYTHING</h2>
+					<p>3 Hours: $100</p><br>
+					<ul>
+					<p><li><b>Once booked please DM with a pic of the set you'd like. Can be Gel X or Acrylics </b></li>
+					</ul></p>
+					</button>
+				</div>
+			</div>	
+			<br>
+			<h3>Total: $<span id="total">0</spa></h3>
+			<input type="submit"> 
+			<script>
+			  let total = 0;
+
+			  function addToTotal(price) {
+			    total += price;
+			    document.getElementById('total').textContent = total.toFixed(2);
+			  }
+			</script>			
+		</main> 
+	</body>
+</html>
