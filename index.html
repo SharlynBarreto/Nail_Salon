@@ -3,9 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nail Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
+    <div id="header">
+        <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="SydsCartelLOGO.png" alt="image" class="logo-nav-bar"></a> <!-- IMAGEEEE LOGOOOO-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#header">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a> </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#insperation">Insperation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+            </div>
+        </nav>
+
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="morganS.JPG" class="d-block w-100 carousel-img" alt="Carousel Slide 1">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <div class="caption-content">
+                            <h1 class="text-center"><br><strong><span>Welcome to SydsCartel Nail Page!</span></strong></h1>
+                            <p class="d-none d-md-block">Your Safe Place </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="casual.png" class="d-block w-100 carousel-img" alt="Carousel Slide 2">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <div class="caption-content">
+                            <h1 class="text-center">1:1 Training</h1>
+                            <p class="d-none d-md-block">Astoria, Queens 11103</p>  <!-- WE CAN ADD A PIN DROP LOGO TO SIGNAL LOCATION -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="sharlyn.jpeg" class="d-block w-100 carousel-img" alt="Carousel Slide 3">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                        <div class="caption-content">
+                            <h1 class="text-center">Licensed Nail Artist</h1>
+                            <p class="d-none d-md-block">Specializing in Gel-X, Hard Gel & Rubber Base</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+<!---------------------------------------------------- About Section ---------------------------------------------------------->
+<div id="expirences">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="pictureofSharlyn.jpg" width="200px" height="600px" alt="Long Picture Of Sharlyn"></div>
+                <div class="col-8">
+                    <h1 class="sub-title">Experiences</h1>
+                    <p>I am a Computer Science major at Queens College graduating December 2025.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'MorganStanley')">Morgan Stanley</p>
+                        <p class="tab-links" onclick="opentab(event, 'Anassa')">Anassa Taverna</p>
+                        <p class="tab-links" onclick="opentab(event, 'CharterHS')">Williamsburg Charter Highschool</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="MorganStanley">
+                        <p class="sub-title-role"><span>Software Engineer Intern</span></p>
+                        <p>January 2025</p>
+                        <p>New York, NY</p>
+                        <ul>
+                            <li>Designed schema for all resource types in Ansible Automation Platform (AAP).</li>
+                            <li>Upgraded technology change management procedure to support granular resource level validation in AAP.</li>
+                            <li>Streamlined emergency request system enabling 40% faster resolution of high-severity incident tickets.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Anassa">
+                        <p class="sub-title-role"><span>Bartender</span></p>
+                        <p>January 2025</p>
+                        <p>New York, NY</p>
+                        <ul>
+                            <li>Delivered a 95% customer satisfaction rate by interacting with over 80+ clients daily and providing personalized service.</li>
+                            <li>Resolved 10+ inventory and customer issues weekly, reducing service-related problems by 20%.</li>
+                            <li>Managed 15+ orders and processed payments simultaneously while organizing 250+ inventory items weekly with 98% accuracy.</li>
+                        </ul>
+                    </div>
+                <div class="tab-contents" id="CharterHS">
+                    <p class="sub-title-role"><span>Teacher Intern</span></p>
+                    <p>January 2025</p>
+                    <p>Brooklyn, NY</p>
+                    <ul>
+                        <li>Collaborated with faculty to individually map 100+ lesson plans for 30+ students, increasing graduation rates by 55%.</li>
+                        <li>Incorporated a survey identifying prevalent student interests, increasing student participation and retention by 60%.</li>
+                        <li>Conducted monthly emotional check-ins & behavioral drills with students to practice emotional coping strategies.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!------------------------------------- SERVICES SECTION --------------------------------->
+       <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                    <div class="service" data-service="Gel-X"> 
+                        <img src=" images/nail4.jpg" alt="Gel-X" />
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h2>Extention: Gel-X</h2>
+                        <p>3 Hours : A More Natural Look Then Acrylic</p><br>
+                        <ul>
+                            <li> <b>Short: $70.00 </b></li>
+                            <li><b>Medium: $75.00</b></li>
+                            <li><b>Large: $80.0</b></li>
+                        </ul>
+                        <p> <b>These prices are listed for plain sets.</b> Frenchies, designs, etc will be an additional cost.</p>
+                        <a herf="#"> Learn more</a>
+                    </div>
+                    <div class="service" data-service="Acrylic">
+                    <img src=" images/acrylicnails.jpg" alt="Acrylic" />
+                    <i class="fa-solid fa-paintbrush"></i>
+                        <h2>Extention: Acrylic</h2>
+                        <p>3 Hours</p><br>
+                        <ul>
+                            <li> <b>Short: $70.00 </b></li>
+                            <li><b>Medium: $75.00</b></li>
+                            <li><b>Large: $80.00</b></li>
+                        </ul>
+                        <p> <b>These prices are listed for plain sets.</b> Frenchies, designs, etc will be an additional cost.</p>
+                        <a herf="#"> Learn more</a>
+                    </div>
+                    <div class="service" data-service="E-file Manicure"> 
+                        <img src=" images/gelmani.jpeg" alt="E-file Manicure" />
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h2>Natural Nails: E-file Manicure "Stuctured Mani"</h2>
+                        <p>2 Hours 30 Minutes $75.00</p><br>
+                        <p><ul>
+                            <li>A Russian cuticle cleaning technique with gel application.</li>
+                        <li> Creates the perfect architecture of your nail bed.</li>
+                    <li> Smoothes and strengthens your nails.</li>
+                <li><b> Includes: Glossy Topcoat & Cuticuel Oil</b></li>
+            </ul></p>
+                        <a herf="#"> Learn more </a>
+                    </div>
+                    <div class="service" data-service="Gel Manicure"> 
+                        <img src=" images/natural.jpeg" alt="Gel Manicure" />
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h2>Natural Nails: Regular Gel Manicure "</h2>
+                        <p>1 Hour: $40.00</p><br>
+                        <ul> 
+                            <li><p><b>This is a regular manicure, NOT a russian manicure. You get to chose the color of gel polish.</b></p></li>
+                        </ul>
+                        <a herf="#"> Learn more</a>
+                    </div>
+                    <div class="service" data-service="Sale"> 
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <h2>SALE: $100 ANYTHING</h2>
+                        <p>3 Hours: $100</p><br>
+                        <ul>
+                        <p><li><b>Once booked please DM with a pic of the set you'd like. Can be Gel X or Acrylics </b></li>
+                        </ul></p>
+                        <a herf="#"> Learn more</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+                <!------------------------------------- INSPERATION SECTION --------------------------------->
+
+
+
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
